@@ -1,0 +1,34 @@
+{
+  "name": "startupindia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "devdoc": "nodemon swagger.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "https": "^1.0.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "mongoose": "^6.0.12",
+    "morgan": "^1.10.0",
+    "node-cron": "^3.0.0",
+    "pm2": "^5.1.2",
+    "request": "^2.88.2",
+    "swagger-autogen": "^2.13.0",
+    "swagger-ui-express": "^4.3.0",
+    "mongodb": "^3.6.12"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.19"
+  }
+}
