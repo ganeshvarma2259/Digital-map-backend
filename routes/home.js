@@ -303,11 +303,11 @@ router.post("/leadingSector", async (req, resp) => {
 
 async function getSectorCounts(matchQuery = "") {
   const querySectorwiseCount = [
-    { $unwind: { path: "$sector" } },
+    { $unwind: { path: "$industry" } },
     { $match: { $and: matchQuery } },
     {
       $group: {
-        _id: { sectorId: "$sector._id", name: "$sector.name" },
+        _id: { industryId: "$industry._id", name: "$industry.name" },
         count: { $sum: 1 },
       },
     },
